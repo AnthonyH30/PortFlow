@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 8vw;
+}
+
+.header--logo{
+    position: relative;
+}
+
+.header--mobile-menu{
+    display: none !important;
+    height: 60px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.bar-1, .bar-2, .bar-3{
+    width: 50px;
+    background-color: white;
+    height: 7px;
+}
+
+.header--navigation .navigation-list{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.list-itens a{
+    text-decoration: none;
+    color: gray;
+    transition: all ease-in 0.2s;
+}
+
+.list-itens a:hover{
+    color: black;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.main--banner{
+    margin-top: 60px;
+    background-image: url(./img/laranja\ azul\ recorte@2x.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 90vh;
+    color: white;
+}
+
+.banner--title{
+    padding-top: 25%;
+    padding-left: 10%;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.fale-conosco{
+    padding-top: 25px;
+    padding-left: 10%;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.section--images{
+    padding-inline: 10%;
+    padding-block: 5%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.image{
+    width: 235px;
+    height: 235px;
+    object-fit: cover;
+}
+
+.footer{
+    position: relative;
+    padding-block: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 10%;
+    min-width: fit-content;
+}
+
+.social--medias{
+    flex-wrap: nowrap;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 700px;
+}
+
+.footer--btn{
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #292929;
+    border: none;
+    width: 70px;
+    height: 30px;
+}
+
+.footer--btn a{
+    color: #cecece;
+    text-decoration: none;
+}
+
+@media(max-width:1080px){
+    .footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social--medias{
+        width: 320px;
+        padding: 8px;
+        background-color: #62ffff;
+    }
+}
+
+@media(max-width:767px){
+    .header--navigation, .navigation-list, .list-itens a{
+        display: none;
+    }
+
+    .header{
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .header--logo{
+        margin-left: 40px;
+    }
+
+    .header--mobile-menu{
+        display: flex !important;
+    }
+
+    .banner--title{
+        padding-top: 35%;
+    }
+
+    .footer--btn{
+        display: initial;
+    }
+}
+
+@media(max-width:600px){
+
+    .banner--title{
+        padding-top: 55%;
+    }
+
+    .section--images{
+        padding: 2%;
+    }
+
+    .image{
+        width: 300px;
+        display: flex;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .first{
+        order: 1;
+    }
+
+    .second{
+        order: 2;
+    }
+
+    .third{
+        order: 3;
+    }
+
+    .fourth{
+        order: 4;
+    }
+
+    .fifth{
+        order: 5;
+    }
+
+    .sixth{
+        order: 6;
+    }
+
+    .seventh{
+        order: 7;
+    }
+
+    .eighth{
+        order: 8;
+    }
+
+    .ninth{
+        order: 9;
+    }
+
+    .tenth{
+        order: 10;
+    }
+
+    .eleventh{
+        order: 11;
+    }
+
+    .twelfth{
+        order: 12;
+    }
+
+    .copyright{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:425px){
+
+    .banner--title{
+        padding-top: 75%;
+    }
+
+    .footer{
+        padding-inline: 1%;
+    }
+
+    .copy-text{
+        font-size: 8px;
+        max-width: 280px;
+    }
+}
