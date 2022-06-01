@@ -96,8 +96,7 @@ html{
 }
 
 .image{
-    width: 235px;
-    height: 235px;
+    width: 20%;
     object-fit: cover;
 }
 
@@ -142,13 +141,22 @@ html{
 }
 
 @media(max-width:1080px){
+
+    .main--banner{
+        background-position-x: 80%;
+    }
+
+    .image{
+        width: 30%;
+    }
+
     .footer{
         flex-direction: column;
         gap: 10px;
     }
 
     .social--medias{
-        width: 320px;
+        width: 90%;
         padding: 8px;
         background-color: #62ffff;
     }
@@ -176,6 +184,10 @@ html{
         padding-top: 35%;
     }
 
+    .image{
+        width: 40%;
+    }
+
     .footer--btn{
         display: initial;
     }
@@ -192,9 +204,8 @@ html{
     }
 
     .image{
-        width: 300px;
+        width: 90%;
         display: flex;
-        height: 300px;
         object-fit: cover;
     }
 
@@ -254,6 +265,10 @@ html{
 
 @media(max-width:425px){
 
+    .header--logo{
+        margin-left: 15px;
+    }
+
     .banner--title{
         padding-top: 75%;
     }
@@ -263,7 +278,7 @@ html{
     }
 
     .copy-text{
-        font-size: 8px;
+        font-size: 16px;
         max-width: 280px;
     }
 }
